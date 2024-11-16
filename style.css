@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    /* background: linear-gradient(rgb(30, 84, 102),lightpink); */
+}
+
+header{
+    width: 100%;
+    height: 10vh;
+    display: grid;
+    place-items: center;
+    font-size: 1.5rem;
+}
+
+main{
+    width: 70%;
+    margin: auto;
+    /* background-color: yellow; */
+    text-align: center;
+}
+
+main img{
+    width: 50% ;
+    height: 80vh;
+    margin: 20px;
+}
