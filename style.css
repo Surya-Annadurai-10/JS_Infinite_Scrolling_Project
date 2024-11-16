@@ -2,11 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
+font-family: "Faculty Glyphic", sans-serif;
 }
 
 body{
-    /* background: linear-gradient(rgb(30, 84, 102),lightpink); */
+    background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
 }
 
 header{
@@ -15,6 +15,13 @@ header{
     display: grid;
     place-items: center;
     font-size: 1.5rem;
+    background-color: white;
+    box-shadow: 0 1px black;
+    margin-bottom: 2rem;
+}
+
+header h1{
+    text-shadow: 0 0 5px grey;
 }
 
 main{
@@ -22,10 +29,132 @@ main{
     margin: auto;
     /* background-color: yellow; */
     text-align: center;
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
 }
 
 main img{
-    width: 50% ;
+    width: 40% ;
     height: 80vh;
-    margin: 20px;
+    margin: 5px;
+    box-shadow: 0 0 20px grey;
+    border-radius: 20px;
+    
+}
+
+.section{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: grid;
+    place-items: center;
+}
+
+.clear{
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    display: grid;
+    place-items: center;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 1.5rem;
+}
+
+.pop-img img{
+    width:100%;
+    height: 100%;
+    border-radius: 20px;
+   
+}
+
+.pop-img{
+    width: 100%;
+    /* background-color: yellow; */
+    height: 80%;
+    border-radius: 20px;
+}
+
+.popup{
+    width:600px;
+    height: 90vh;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 0 30px grey;
+    padding: 1rem;
+    position: relative;
+}
+
+.top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+     height: 50px;
+     margin: 0 0.5rem;
+}
+
+.likes-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    /* background-color: red; */
+}
+
+.likes{
+    font-size: 1.2rem;
+}
+
+.likes span{
+    font-weight: bold;
+}
+
+
+
+.download button{
+  padding: 0.7rem 1rem;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(218, 45, 15);
+  color: white;
+  font-size: 1.1rem;
+  box-shadow:  0 0 10px grey;
+  transition: 0.3s ease-in-out;
+}
+
+.download button:hover{
+    box-shadow: 0 10px 20px rgb(105, 105, 105);
+    /* color: black; */
+    transform: scale(1.1);
+    background-color: rgb(243, 88, 88);
+}
+
+.bottom{
+    width: 100%;
+    /* height: 100px; */
+    /* background-color: yellow; */
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+.bottom p{
+    text-align: start;
+    /* width: 100%; */
+}
+
+
+.icon{
+    font-size: 2rem;
 }
